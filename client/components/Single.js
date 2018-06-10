@@ -1,9 +1,3 @@
 import React from 'react';
 
-export default () => {
-  return (
-    <div className="single-photo">
-      I'm a photo
-    </div>
-  )
-}
+export default () => <div className="single-photo">I&apos;m a photo</div>;
