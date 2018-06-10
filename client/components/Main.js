@@ -1,18 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router';
-import PropTypes from 'prop-types';
 
-const Main = props => (
+export default props => (
   <div>
     <h1>
       <Link to="/">Reduxstagram</Link>
     </h1>
-    {React.cloneElement(props.children)}
+    {React.cloneElement(props.children, props)}
   </div>
 );
-
-Main.propTypes = {
-  children: PropTypes.element.isRequired,
-};
-
-export default Main;

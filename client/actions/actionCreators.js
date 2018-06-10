@@ -1,4 +1,7 @@
-export const increment = index => ({ type: 'INCREMENT_LIKES', index });
+export const increment = index => {
+  console.log('actionIndex', index);
+  return { type: 'INCREMENT_LIKES', index };
+};
 
 export const addComment = (postId, author, comment) => ({
   type: 'ADD_COMMENT',
